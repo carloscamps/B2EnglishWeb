@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Speaking Test</title>
+    <link rel="stylesheet" href="css/styles_speaking.css">
+</head>
+<body>
+	<nav>
+  		<ul>
+		<li><a href="grammar.html">Grammar</a></li>  
+    	<li><a href="vocabulary.html">Vocabulary</a></li>
+    	<li><a href="reading.html">Reading</a></li>
+    	<li><a href="writing.html">Writing</a></li>
+    	<li><a href="listening.html">Listening</a></li>
+		<li class="active"><a href="speaking.html">Speaking</a></li>
+		<li><a href="logout.php" class="logout-button">Log Out >></a></li>	
+  		</ul>
+	</nav>
+    <div id="testContainer">
+        <h2>Speaking Test</h2>
+        <p id="question1">Question 1: What's the weather like today?</p>
+        <button onclick="startRecording(1)">Record Answer</button>
+        <audio id="audio1" controls hidden></audio>
+        
+		<p id="question2">Question 2: What's your favourite sport?</p>
+        <button onclick="startRecording(1)">Record Answer</button>
+        <audio id="audio2" controls hidden></audio>
+		
+		<p id="question3">Question 3: What do you usually do at weekends?</p>
+        <button onclick="startRecording(1)">Record Answer</button>
+        <audio id="audio3" controls hidden></audio>
+        <script src="js/script_speaking.js"></script>
+    </div>
+</body>
+</html>
+

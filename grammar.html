@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <title>Grammar</title>
+    <link rel="stylesheet" type="text/css" href="css/styles_grammar.css">
+</head>
+<body>
+	<nav>
+  	 <ul>
+		<li class="active"><a href="grammar.html">Grammar</a></li>  
+    	<li><a href="vocabulary.html">Vocabulary</a></li>
+    	<li><a href="reading.html">Reading</a></li>
+    	<li><a href="writing.html">Writing</a></li>
+    	<li><a href="listening.html">Listening</a></li>
+		<li><a href="speaking.html">Speaking</a></li>
+		<li><a href="logout.php" class="logout-button">Log Out >></a></li>		
+  	 </ul>
+	</nav>
+    <form id="quizForm">
+		<h2>Grammar Test</h2>
+        <div class="question1">
+            <p>Question 1: We see each other _______.</p>
+            <input type="radio" name="question1" value="opcion1"> often<br>
+            <input type="radio" name="question1" value="opcion2"> twice a week<br>
+            <input type="radio" name="question1" value="opcion3"> sometimes
+        </div>
+		<div class="question2">
+            <p>Question 2: My brother _______ our grandparents next week.</p>
+            <input type="radio" name="question2" value="opcion1"> will visiting<br>
+            <input type="radio" name="question2" value="opcion2"> will be visiting<br>
+            <input type="radio" name="question2" value="opcion3"> will be visit
+        </div>
+		<div class="question3">
+            <p>Question 3: She’ll _______ tennis tomorrow morning..</p>
+            <input type="radio" name="question3" value="opcion1"> play<br>
+            <input type="radio" name="question3" value="opcion2"> plays<br>
+            <input type="radio" name="question3" value="opcion3"> playing<br>
+        </div>
+		<div class="question4">
+            <p>Question 4: The weather was horrible that day. I _______ anywhere if I had known it would rain all day.</p>
+            <input type="radio" name="question4" value="opcion1"> wouldn’t have gone<br>
+            <input type="radio" name="question4" value="opcion2"> wouldn’t go<br>
+            <input type="radio" name="question4" value="opcion3"> would have gone
+        </div>
+		<div class="question5">
+            <p>Question 5: I couldn't sleep _______ tired.</p>
+            <input type="radio" name="question5" value="opcion1"> despite I was<br>
+            <input type="radio" name="question5" value="opcion2"> although I was<br>
+            <input type="radio" name="question5" value="opcion3"> in spite being<br>
+        </div>
+        
+        
+        <button type="button" onclick="submitAnswers()">Submit Answer</button>
+		<div id="result"></div>
+    </form>    
+    <script src="js/script_grammar.js"></script>
+</body>
+</html>

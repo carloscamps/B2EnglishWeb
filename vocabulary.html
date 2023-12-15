@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vocabulary</title>
+    <link rel="stylesheet" type="text/css" href="css/styles_vocabulary.css">
+</head>
+<body>
+	<nav>
+  		<ul>
+		<li><a href="grammar.html">Grammar</a></li>  
+    	<li class="active"><a href="vocabulary.html">Vocabulary</a></li>
+    	<li><a href="reading.html">Reading</a></li>
+    	<li><a href="writing.html">Writing</a></li>
+    	<li><a href="listening.html">Listening</a></li>
+		<li><a href="speaking.html">Speaking</a></li>
+		<li><a href="logout.php" class="logout-button">Log Out >></a></li>	
+  		</ul>
+	</nav>	
+    <div id="quizContainer">
+		<h2>Vocabulary Test</h2>
+        <form id="wordMatchTest">
+            <div class="question">
+                <label for="answer1">1. bar</label>
+                <select id="answer1" name="answer1">
+                    <option value="">--Select an option--</option>
+                    <option value="A">A. chance</option>
+                    <option value="B">B. good</option>
+                    <option value="C">C. group</option>
+                    <option value="D">D. consult</option>
+                    <option value="E">E. encourage</option>
+                    <option value="F">F. restaurant</option>
+                    <option value="G">G. excuse</option>
+                    <option value="H">H. dark</option>
+                    <option value="I">I. health</option>
+                    <option value="J">J. motion</option>
+                </select>
+            </div>
+			<div class="question">
+                <label for="answer2">2. best</label>
+                <select id="answer2" name="answer2">
+                    <option value="">--Select an option--</option>
+                    <option value="A">A. chance</option>
+                    <option value="B">B. good</option>
+                    <option value="C">C. group</option>
+                    <option value="D">D. consult</option>
+                    <option value="E">E. encourage</option>
+                    <option value="F">F. restaurant</option>
+                    <option value="G">G. excuse</option>
+                    <option value="H">H. dark</option>
+                    <option value="I">I. health</option>
+                    <option value="J">J. motion</option>
+                </select>
+            </div>
+			<div class="question">
+                <label for="answer3">3. black</label>
+                <select id="answer3" name="answer3">
+                    <option value="">--Select an option--</option>
+                    <option value="A">A. chance</option>
+                    <option value="B">B. good</option>
+                    <option value="C">C. group</option>
+                    <option value="D">D. consult</option>
+                    <option value="E">E. encourage</option>
+                    <option value="F">F. restaurant</option>
+                    <option value="G">G. excuse</option>
+                    <option value="H">H. dark</option>
+                    <option value="I">I. health</option>
+                    <option value="J">J. motion</option>
+                </select>
+            </div>
+			<div class="question">
+                <label for="answer4">4. team</label>
+                <select id="answer4" name="answer4">
+                    <option value="">--Select an option--</option>
+                    <option value="A">A. chance</option>
+                    <option value="B">B. good</option>
+                    <option value="C">C. group</option>
+                    <option value="D">D. consult</option>
+                    <option value="E">E. encourage</option>
+                    <option value="F">F. restaurant</option>
+                    <option value="G">G. excuse</option>
+                    <option value="H">H. dark</option>
+                    <option value="I">I. health</option>
+                    <option value="J">J. motion</option>
+                </select>
+            </div>
+			<div class="question">
+                <label for="answer5">5. occasion</label>
+                <select id="answer5" name="answer5">
+                    <option value="">--Select an option--</option>
+                    <option value="A">A. chance</option>
+                    <option value="B">B. good</option>
+                    <option value="C">C. group</option>
+                    <option value="D">D. consult</option>
+                    <option value="E">E. encourage</option>
+                    <option value="F">F. restaurant</option>
+                    <option value="G">G. excuse</option>
+                    <option value="H">H. dark</option>
+                    <option value="I">I. health</option>
+                    <option value="J">J. motion</option>
+                </select>
+            </div>
+            <button type="button" onclick="submitAnswers()">Submit Answer</button>
+        </form>
+		<div id="result"></div>
+    </div>
+    <script src="js/script_vocabulary.js"></script>
+</body>
+</html>

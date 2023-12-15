@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>B2 English Web Login</title>
+    <link rel="stylesheet" href="css/styles_login.css">
+</head>
+<body>
+    <div class="container">
+        <h1>B2EnglishWeb</h1>
+        <p>Achieve B2 level in English combining pedagogy and technology</p>
+        <div class="login-container">
+            <img src="img/login.png" alt="Parrot" class="parrot-image">
+            
+            <!-- Canviem l'atribut 'id' per 'action' i apuntem a 'login.php' -->
+            <form id="loginForm" action="login.php" method="post">
+                <label for="username">User:</label>
+                <!-- Asegura't que l'atribut 'name' estigui present i sigui correcte -->
+                <input type="text" id="username" name="user" required> 
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <div class="buttons">
+                    <!-- Canviem aquest botó per fer-lo tipus 'reset' o afegeix una funció de cancel·lació -->
+                    <a href="home.html" class="button cancel-button">Cancel</a>
+                    <!-- Aquest botó farà el submit del formulari -->
+                    <button type="submit">Submit</button>
+                </div>
+            </form>            
+        </div>
+    </div>
+ 
+</body>
+</html>
+
+

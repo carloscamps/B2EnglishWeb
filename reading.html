@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <title>Reading</title>
+    <link rel="stylesheet" href="css/styles_reading.css">
+</head>
+<body>
+	<nav>
+  		<ul>
+		<li><a href="grammar.html">Grammar</a></li>  
+    	<li><a href="vocabulary.html">Vocabulary</a></li>
+    	<li class="active"><a href="reading.html">Reading</a></li>
+    	<li><a href="writing.html">Writing</a></li>
+    	<li><a href="listening.html">Listening</a></li>
+		<li><a href="speaking.html">Speaking</a></li>
+		<li><a href="logout.php" class="logout-button">Log Out >></a></li>	
+  		</ul>
+	</nav>	
+    <div id="quizContainer">
+        
+        <form id="readingTest">
+			
+            <div class="question">
+                <p>1. All my friends ______ coming.</p>
+                <label><input type="radio" name="question1" value="a"> are</label>
+                <label><input type="radio" name="question1" value="b"> will</label>
+                <label><input type="radio" name="question1" value="c"> be</label>
+            </div>
+            <div class="question">
+                <p>2. I'm making a big ______ cake.</p>
+                <label><input type="radio" name="question2" value="a"> chocolate</label>
+                <label><input type="radio" name="question2" value="b"> salad</label>
+                <label><input type="radio" name="question2" value="c"> mushroom</label>
+            </div>
+            <!-- Continúa con el resto de preguntas... -->
+			<div class="question">
+                <p>3. I bought all the drinks ______ .</p>
+                <label><input type="radio" name="question3" value="a"> tomorrow</label>
+                <label><input type="radio" name="question3" value="b"> yesterday</label>
+                <label><input type="radio" name="question3" value="c"> later</label>
+            </div>
+			<div class="question">
+                <p>4. Can you please ______some candles?</p>
+                <label><input type="radio" name="question4" value="a"> bringing</label>
+                <label><input type="radio" name="question4" value="b"> bring</label>
+                <label><input type="radio" name="question4" value="c"> to bring</label>
+            </div>
+			<div class="question">
+                <p>5. And don't ______ to bring your jacket, it might rain.</p>
+                <label><input type="radio" name="question5" value="a"> think</label>
+                <label><input type="radio" name="question5" value="b"> take</label>
+                <label><input type="radio" name="question5" value="c"> forget</label>
+            </div>			
+            <button type="button" onclick="submitAnswers()">Submit Answers</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="js/script_reading.js"></script>
+</body>
+</html>
+

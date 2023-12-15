@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Listening Test</title>
+    <link rel="stylesheet" href="css/styles_listening.css">
+</head>
+<body>
+	<nav>
+  		<ul>
+		<li><a href="grammar.html">Grammar</a></li>  
+    	<li><a href="vocabulary.html">Vocabulary</a></li>
+    	<li><a href="reading.html">Reading</a></li>
+    	<li><a href="writing.html">Writing</a></li>
+    	<li class="active"><a href="listening.html">Listening</a></li>
+		<li><a href="speaking.html">Speaking</a></li>
+		<li><a href="logout.php" class="logout-button">Log Out >></a></li>	
+  		</ul>
+	</nav>	
+    <div id="quizContainer">
+        <h2>Listening Test</h2>
+        <form id="listeningTest">
+            <!-- Pregunta 1 amb reproductor d'àudio -->
+            <div class="question">
+                <p>Two friends are talking about Lisa’s new boyfriend. How do they describe Lisa’s new boyfriend?</p>
+                <audio controls>
+                    <source src="audio/TEST-1-1.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <label><input type="radio" name="question1" value="1"> 1. Is tall and thin</label><br>
+                <label><input type="radio" name="question1" value="2"> 2. Has brown eyes and tattoos</label><br>
+                <label><input type="radio" name="question1" value="3"> 3. Is short and has brown eyes</label>
+            </div>
+			<div class="question">
+                <p>Listen to two friends talking about the price of a taxi. How much will the taxi cost?</p>
+                <audio controls>
+                    <source src="audio/TEST-1-2.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <label><input type="radio" name="question2" value="1"> 1. $2</label><br>
+                <label><input type="radio" name="question2" value="2"> 2. $6</label><br>
+                <label><input type="radio" name="question2" value="3"> 3. $12</label>
+            </div>
+			<div class="question">
+                <p>Elisa just spoke with her university advisor about signing up for a course. How long will the course be?</p>
+                <audio controls>
+                    <source src="audio/TEST-1-3.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <label><input type="radio" name="question3" value="1"> 1. One month</label><br>
+                <label><input type="radio" name="question3" value="2"> 2. One year</label><br>
+                <label><input type="radio" name="question3" value="3"> 3. Three weeks</label>
+            </div>
+			<div class="question">
+                <p>Listen to two students talking about school. Which class was cancelled today?</p>
+                <audio controls>
+                    <source src="audio/TEST-1-4.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <label><input type="radio" name="question4" value="1"> 1. Math</label><br>
+                <label><input type="radio" name="question4" value="2"> 2. Science</label><br>
+                <label><input type="radio" name="question4" value="3"> 3. Gym</label>
+            </div>
+			<div class="question">
+                <p>Martin asks Anna about her injury. What did Anna injure?</p>
+                <audio controls>
+                    <source src="audio/TEST-1-5.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <label><input type="radio" name="question5" value="1"> 1. Arm</label><br>
+                <label><input type="radio" name="question5" value="2"> 2. Ankle</label><br>
+                <label><input type="radio" name="question5" value="3"> 3. Knee</label>
+            </div>           
+            <button type="button" onclick="submitAnswers()">Submit Answers</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="js/script_listening.js"></script>
+</body>
+</html>
+
